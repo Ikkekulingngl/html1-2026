@@ -3,9 +3,98 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Falske nyheter</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <style>
+            body {
+                background-color: black;
+                color: white;
+                margin: 0;
+            }
+
+            .header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                border: 5px solid rgb(37, 37, 37);
+                background-color: rgb(37, 37, 37);
+            }
+
+            .posts {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+                gap: 25px;
+            }
+
+            .post {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 25px;
+                text-align: center;
+                width: 512px;
+                height: 312px;
+                background-color: rgb(37, 37, 37);
+                border-radius: 25px;
+                border: 3px solid rgb(46, 45, 45);
+            }
+
+            .post p {
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            .post img {
+                position: absolute;
+                border-radius: 50px;
+                width: 25px;
+                height: 25px;
+                left: 515px;
+                bottom: 15px;
+            }
+
+            .post h1 {
+                position: absolute;
+                overflow: hidden;
+                word-wrap: break-word;
+                top: -15px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;                
+            }
+        </style>
     </head>
     <body>
-        <h1>H1 tag</h1>
+        <div class="header">
+            <h1 onclick="location.reload()">Falske nyheter</h1>
+            <i>Norges største nettsted for falske nyheter</i>
+        </div>
+        <div class="posts">
+            <div class="post">
+                <h1>Bitcoin sin verdi stiger!</h1>
+                <p>Nå i 2026 skal Bitcoin sin verdi ha stiget opp til 1 million norske kroner, noe som vi ikke har sett på mange år. Store og kjente personer har derfor kjøpt Bitcoin som så klart gjør at det ser veldg fristene ut å bli med på moroa. Grunnen til stigningen i verdi er at blokkjede skal ha blitt fornyet etter ett stort sikkerhetshull skal ha blitt funnet i Bitcoin kjernens kode som skal ha gitt dårlige aktører muligheten til å manipulere transaksjoner etter at de har blitt sent.</p>
+                <img src="assets/bitcoin.png" alt="failed to load">
+            </div>
+            <div class="post">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet luctus leo. Integer ac volutpat tellus, in fermentum ligula. Nulla facilisi. Nunc porttitor tellus elit, eu sagittis ex malesuada sit amet. Donec eu luctus nibh, eget condimentum enim. Nam varius eleifend magna sit amet ultricies. Sed placerat arcu quis vehicula tincidunt. Integer porttitor massa elit. Pellentesque tincidunt, ex non pellentesque maximus, diam arcu ornare leo, et vulputate neque ante vel risus. Aenean non pharetra augue. Cras sagittis commodo scelerisque. Integer condimentum maximus metus eget accumsan. Donec venenatis, lorem quis ornare euismod, lacus tellus consequat libero, non rhoncus tortor sem eu nunc.</p>
+                <img src="https://loremipsum.imgix.net/CZhWYZJ3UEpUrYOwBqZZ3/846c9c7fdc261fe79205833c6787f3fc/lorem-ipsum-magazine-layout_copy.jpg?w=288&q=60&auto=format,compress" alt="lorem ipsum">
+            </div>
+            <div class="post">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet luctus leo. Integer ac volutpat tellus, in fermentum ligula. Nulla facilisi. Nunc porttitor tellus elit, eu sagittis ex malesuada sit amet. Donec eu luctus nibh, eget condimentum enim. Nam varius eleifend magna sit amet ultricies. Sed placerat arcu quis vehicula tincidunt. Integer porttitor massa elit. Pellentesque tincidunt, ex non pellentesque maximus, diam arcu ornare leo, et vulputate neque ante vel risus. Aenean non pharetra augue. Cras sagittis commodo scelerisque. Integer condimentum maximus metus eget accumsan. Donec venenatis, lorem quis ornare euismod, lacus tellus consequat libero, non rhoncus tortor sem eu nunc.</p>
+                <img src="https://loremipsum.imgix.net/CZhWYZJ3UEpUrYOwBqZZ3/846c9c7fdc261fe79205833c6787f3fc/lorem-ipsum-magazine-layout_copy.jpg?w=288&q=60&auto=format,compress" alt="lorem ipsum">
+            </div>
+            <div class="post">
+                <h1>Putin truer med å sprenge Norge!</h1>
+                <p>I dag skal det ha kommet ut sjokkerende nyheter om at Putin truer Norge med en ekte atom bombe. Atom bomben er siktet mot Bergen kl. 18:00. Russiske styrker skal også bli sent inn mot Drammen og de skal ta med seg tanks, tnt, c4, artillery, osv. Disse trusslene fra Russland viser at Norge med hjelp fra NATO styrker må sende sine egne styrker ut i kamp med en eneste gang for å forsvare landet.</p>
+                <img src="assets/tilfeldig_by.png" alt="lorem ipsum">
+            </div>
+        </div>
     </body>
 </html>
